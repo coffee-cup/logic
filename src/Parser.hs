@@ -23,8 +23,8 @@ postfix name f = Ex.Postfix (reservedOp name >> return f)
 table :: Ex.OperatorTable String () Identity Expr
 table = [
       [ prefix "!" Neg, prefix "not" Neg ]
-    , [ binary "&" And Ex.AssocRight, binary "|" Or Ex.AssocRight ]
-    , [ binary "and" And Ex.AssocRight, binary "or" Or Ex.AssocRight ]
+    , [ binary "&" And Ex.AssocRight, binary "|" Or Ex.AssocRight,
+        binary "and" And Ex.AssocRight, binary "or" Or Ex.AssocRight ]
   ]
 
 value :: String -> Parser String
