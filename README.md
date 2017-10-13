@@ -1,6 +1,6 @@
 # logic
 
-A little parser and interpreter to parse logical expressions
+A little parser and interpreter to parse boolean expressions
 
 ```
 stack build
